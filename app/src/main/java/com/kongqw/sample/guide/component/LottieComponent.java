@@ -1,20 +1,21 @@
-package com.demo.component;
+package com.kongqw.sample.guide.component;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.Toast;
-import com.blog.www.guideview.Component;
-import com.demo.guide.R;
+
+import com.kongqw.guide.Component;
+import com.kongqw.sample.guide.R;
 
 /**
  * Created by binIoter on 16/6/17.
  */
-public class SimpleComponent implements Component {
+public class LottieComponent implements Component {
 
   @Override public View getView(LayoutInflater inflater) {
 
-    LinearLayout ll = (LinearLayout) inflater.inflate(R.layout.layer_frends, null);
+    LinearLayout ll = (LinearLayout) inflater.inflate(R.layout.layer_lottie, null);
     ll.setOnClickListener(new View.OnClickListener() {
       @Override public void onClick(View view) {
         Toast.makeText(view.getContext(), "引导层被点击了", Toast.LENGTH_SHORT).show();
@@ -24,11 +25,11 @@ public class SimpleComponent implements Component {
   }
 
   @Override public int getAnchor() {
-    return Component.ANCHOR_BOTTOM;
+    return Component.ANCHOR_TOP;
   }
 
   @Override public int getFitPosition() {
-    return Component.FIT_END;
+    return Component.FIT_CENTER;
   }
 
   @Override public int getXOffset() {
@@ -36,6 +37,6 @@ public class SimpleComponent implements Component {
   }
 
   @Override public int getYOffset() {
-    return 10;
+    return -30;
   }
 }

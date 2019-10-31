@@ -1,4 +1,4 @@
-package com.demo.aty;
+package com.kongqw.sample.guide.activity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.demo.guide.R;
+import com.kongqw.sample.guide.R;
 
 public class HomeActivity extends Activity implements View.OnClickListener {
     private Button mBtnList, mBtnMore;
@@ -15,8 +15,8 @@ public class HomeActivity extends Activity implements View.OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        mBtnMore = (Button) findViewById(R.id.btn_more);
-        mBtnList = (Button) findViewById(R.id.btn_list);
+        mBtnMore = findViewById(R.id.btn_more);
+        mBtnList = findViewById(R.id.btn_list);
         mBtnList.setOnClickListener(this);
         mBtnMore.setOnClickListener(this);
     }

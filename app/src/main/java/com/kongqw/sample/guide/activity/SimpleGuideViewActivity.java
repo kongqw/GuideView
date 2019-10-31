@@ -1,4 +1,4 @@
-package com.demo.aty;
+package com.kongqw.sample.guide.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -7,13 +7,13 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
-import com.blog.www.guideview.Component;
-import com.blog.www.guideview.Guide;
-import com.blog.www.guideview.GuideBuilder;
-import com.demo.component.LottieComponent;
-import com.demo.component.MutiComponent;
-import com.demo.component.SimpleComponent;
-import com.demo.guide.R;
+import com.kongqw.guide.Component;
+import com.kongqw.guide.Guide;
+import com.kongqw.guide.GuideBuilder;
+import com.kongqw.sample.guide.R;
+import com.kongqw.sample.guide.component.LottieComponent;
+import com.kongqw.sample.guide.component.MutiComponent;
+import com.kongqw.sample.guide.component.SimpleComponent;
 
 public class SimpleGuideViewActivity extends Activity {
 
@@ -24,15 +24,15 @@ public class SimpleGuideViewActivity extends Activity {
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_simple_guide_view);
-    header_imgbtn = (Button) findViewById(R.id.header_imgbtn);
+    header_imgbtn = findViewById(R.id.header_imgbtn);
     header_imgbtn.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View view) {
         Toast.makeText(SimpleGuideViewActivity.this, "show", Toast.LENGTH_SHORT).show();
       }
     });
-    ll_nearby = (LinearLayout) findViewById(R.id.ll_nearby);
-    ll_video = (LinearLayout) findViewById(R.id.ll_video);
+    ll_nearby = findViewById(R.id.ll_nearby);
+    ll_video = findViewById(R.id.ll_video);
     header_imgbtn.post(new Runnable() {
       @Override
       public void run() {

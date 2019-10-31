@@ -1,4 +1,4 @@
-package com.demo.aty;
+package com.kongqw.sample.guide.activity;
 
 import android.app.Activity;
 import android.content.Context;
@@ -9,10 +9,10 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.ListView;
-import com.blog.www.guideview.Guide;
-import com.blog.www.guideview.GuideBuilder;
-import com.demo.component.MutiComponent;
-import com.demo.guide.R;
+import com.kongqw.guide.Guide;
+import com.kongqw.guide.GuideBuilder;
+import com.kongqw.sample.guide.R;
+import com.kongqw.sample.guide.component.MutiComponent;
 import java.util.ArrayList;
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.blog.www.guideview;
+package com.kongqw.guide;
 
 /**
  * 遮罩系统运行异常的封装

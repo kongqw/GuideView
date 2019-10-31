@@ -1,4 +1,4 @@
-package com.blog.www.guideview;
+package com.kongqw.guide;
 
 import android.os.Parcel;
 import android.os.Parcelable;
