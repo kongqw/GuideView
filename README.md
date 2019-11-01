@@ -1,3 +1,37 @@
+ 
+[![](https://jitpack.io/v/kongqw/GuideView.svg)](https://jitpack.io/#kongqw/GuideView)
+ 
+ 
+# How to
+To get a Git project into your build:
+
+Step 1. Add the JitPack repository to your build file
+
+## gradle
+
+Add it in your root build.gradle at the end of repositories:
+
+``` gradle
+allprojects {
+    repositories {
+        ...
+        maven { url 'https://jitpack.io' }
+    }
+}
+```
+
+Step 2. Add the dependency
+
+``` gradle
+dependencies {
+        implementation 'com.github.kongqw:GuideView:1.0.0'
+}
+```
+	
+	
+---------------------------
+ 
+ 
  * <h1>GuideView</h1>
  * 本系统能够快速的为一个Activity里的任何一个View控件创建一个遮罩式的导航页，并且可以再高亮区域绘制任何你想要的布局或者lottie动画等炫酷效果</p>
  * <h3>工作原理</h3>
